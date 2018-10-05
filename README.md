@@ -39,7 +39,8 @@ Se o horário atual estiver presente na lista de intervalos cadastrados ele cria
 Após, ele entra no `for`, para cada virada definida nos parâmetros, e transforma o caractere A ou o caractere B para um vetor de bytes, sendo eles:
 * **1024** = _A_
 * **512** = _B_
-E por fim manda o vetor inteiro para o arduino.
+
+E por fim manda o vetor inteiro para o arduino.  
 Após pressionado o botão iniciar, ele começa lendo o último registro no banco de dados da tabela horários, e então chama a função `CalcularHorários` (que será explicada posteriormente), que define todos os horários aos quais a aplicação irá efetuar a comunicação com o Arduino, então, depois de definido os horários, a aplicação lê os parâmetros para calcular o número de viradas e a angulação necessária.
 Por fim ele define o intervalo de 1 segundo que será usado para a checagem de horários e então inicia.
 Se pressionado novamente, ele para a aplicação.
